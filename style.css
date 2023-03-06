@@ -179,7 +179,15 @@ a:visited {
 }
 
 .button {
-  background-color: transparent;
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 12px;
 }
 .project-image {
   display: flex;
@@ -188,8 +196,8 @@ a:visited {
 }
 
 .project-image img {
-  max-width: 80%;
-  max-height: 80vh;
+  max-width: 100%;
+  max-height: 75vh;
 }
 
 .project-details {
