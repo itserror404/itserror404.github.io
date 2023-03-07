@@ -1,0 +1,288 @@
+/* Reset styles for header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+/* Style for logo */
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  font: 
+}
+
+/* Style for menu */
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li:first-child {
+  margin-left: 0;
+}
+
+.menu a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+}
+
+a:visited {
+  color: black;
+}
+
+
+/* Style for menu toggle */
+.menu-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Hide menu and show menu toggle on small screens */
+  .menu {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .menu-toggle i {
+    font-size: 24px;
+    color: #000;
+  }
+  
+  /* Show menu when menu toggle is clicked */
+  .menu-toggle.clicked + .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .menu-toggle.clicked + .menu ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .menu-toggle.clicked + .menu li {
+    margin: 10px 0;
+  }
+}
+
+
+/* Reset styles for fullscreen section */
+.fullscreen-section {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* change justify-content to align the content at the top of the section */
+  align-items: left;
+  background-color:  #FFFFFF;
+  color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Style for content wrapper */
+.content-wrapper {
+  text-align: left;
+  z-index: 1;
+  margin-top: 10%; /* change margin-top to move the content up */
+  padding-left: 100px;
+}
+
+/* Style for name */
+.name {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* Style for title */
+.title {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+/* Style for education */
+.education {
+  font-size: 18px;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+/* Style for arrow wrapper */
+.arrow-wrapper {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: arrow-bounce 2s infinite;
+  z-index: 1;
+  margin-top: -20px; /* Adjust this value to move the arrow up or down */
+}
+
+/* Style for arrow icon */
+.arrow-wrapper i {
+  font-size: 24px;
+  color: #000;
+}
+
+/* Animation for arrow icon */
+@keyframes arrow-bounce {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+#featured-projects {
+  margin-top: 50px;
+  margin-left: 50px;
+  text-align: left;
+}
+
+#project {
+  margin-top: 50px;
+}
+
+.button {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 12px;
+}
+.project-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image img {
+  max-width: 100%;
+  max-height: 75vh;
+}
+
+.project-details {
+  text-align: center;
+}
+
+.project-details h3 {
+  margin-top: 30px;
+}
+
+.project-details p {
+  margin-top: 20px;
+}
+
+.project-skills {
+  margin-top: 30px;
+}
+
+.project-skills button {
+  margin-right: 10px;
+}
+.main-content {
+  margin-bottom: 100px; /* Adjust the value to your liking */
+}
+
+
+.footer {
+  background-color: #fff;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer {
+  background-color:  #fff;
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-icons {
+  display: inline-block;
+  margin-right: 20px;
+  margin-right: 10px;
+}
+
+.footer-icons a {
+  color: black;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.footer-text {
+  display: inline-block;
+  margin-right: 50px;
+  
+}
+
+.footer-text p {
+  margin: 0;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: Arial, sans-serif;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-top: 20px;
+  margin-left: 90px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #0077B5;
+}
+body {
+  font-family: montserrat, sans-serif;
+}
