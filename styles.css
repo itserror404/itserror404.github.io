@@ -257,6 +257,7 @@ section:not(.hero ) {
 
 .misc-grid img {
   width: 100%;
+ height: 200px;
   transition: transform 0.3s ease;
 }
 
