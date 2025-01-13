@@ -173,25 +173,25 @@ section:not(.hero ) {
 
 /* UI Gallery */
 .gallery-grid {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-  display: grid;
-
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to next line */
   gap: 20px;
   width: 100%;
- 
+  padding: 20px;
+  justify-content: flex-start; /* Aligns items to start of each row */
 }
 
 .gallery-grid img {
-  width: 100%;
+  height: 300px; /* Fixed height */
+  width: auto; /* Width will adjust based on aspect ratio */
+  object-fit: contain; /* Preserves aspect ratio */
   cursor: pointer;
   transition: transform 0.3s ease;
-
-  height: 300px; /* Fixed height for all images */
-  object-fit: cover; /* This maintains aspect ratio while filling the space */
 }
 
 .gallery-grid img:hover {
   transform: scale(1.05);
+  z-index: 1;
 }
 
 /* Lightbox */
