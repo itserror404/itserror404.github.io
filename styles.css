@@ -178,17 +178,16 @@ section:not(.hero ) {
 
   gap: 20px;
   width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
+ 
 }
 
 .gallery-grid img {
-  width: auto;
+  width: 100%;
   cursor: pointer;
   transition: transform 0.3s ease;
 
   height: 300px; /* Fixed height for all images */
-  object-fit: contain; /* This maintains aspect ratio while filling the space */
+  object-fit: cover; /* This maintains aspect ratio while filling the space */
 }
 
 .gallery-grid img:hover {
