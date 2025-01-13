@@ -1,154 +1,331 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Maimunaz</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-MTjJ3/3+GSL/8s/HsNLOjQh+1b37sChs/U9Jhs/kCtLgkP45eW+Q8aBm45gGyqxJlSyfWxEz8XFO7Y4e27o0Cg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-wE1koe3rKJKW8r43z5pB+YHvKfCJWgzjXkmscGZnEMlFjoju2KseJbHdtIzDwYcAtVOkT2TNGNo9ZMm0P6o0sg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maimuna Zaheer - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-  <header>
+<header class="main-header">
+    <div class="header-container">
+        <a href="#" class="logo">mz<span class="logo-dot">.</span></a>
+        
+        <!-- Desktop Menu -->
+        <nav class="main-nav desktop-menu">
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                    <li><a href="#gallery">UI Gallery</a></li>
+                    <li><a href="#misc">Miscellaneous</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#" class="cv-button">cv<span class="arrow">→</span></a></li>
+            </ul>
+        </nav>
+        <div class="header-right desktop-menu">
+            <div class="status-indicator">
+                <span class="dot"></span>
+                Available for work
+            </div>
+        </div>
 
+        
 
-  <div class="logo">
-    <a href="index.html">maimuna</a>
-  </div>
-  <nav class="menu">
-    <ul>
-      <li><a href="#featured-projects">Projects</a></li>
-      <li><a href="miscellaneous.html">Miscellaneous</a></li>
-      <li><a href="mailto:mz2934@nyu.edu">mz2934@nyu.edu</a></li>
-    </ul>
-  </nav>
-  <div class="menu-toggle">
-    <div class="menu-toggle">
-      <i class="fas fa-bars"></i>
+        <!-- Hamburger Button -->
+        <button class="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#gallery">UI Gallery</a></li>
+                    <li><a href="#misc">Miscellaneous</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="#" class="cv-button">cv<span class="arrow">→</span></a>
+                <div class="availability">
+                    <span class="status-circle"></span>
+                    <span class="status-text">available for work</span>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
-<section class="fullscreen-section">
-  <div class="content-wrapper">
-    <h1 class="name">Maimuna Zaheer</h1>
-    <h3 class="title">UX designer | Developer</h3>
-    <h4 class="education">Computer Science, Design and Interactive Media @ NYU Abu Dhabi</h4>
-  </div>
-
-  <div class="social-icons">
-  <a href="mailto:mz2934@nyu.edu"><i class="fas fa-envelope"></i></a>
-  <a href="http://linkedin.com/in/maimuna-zaheer/"><i class="fab fa-linkedin"></i></a>
-  <a href="http://github.com/itserror404"><i class="fab fa-github"></i></a>
-</div>
-  
- 
-  <div class="arrow-wrapper">
-    <i class="fas fa-chevron-down"></i>
-  </div>
-</section>
-
-  <section id="featured-projects">
-  <div class="container">
-    <h2>Featured Projects</h2>
-
-    </div>
-</section>
 
 
-  <section id="project">
-  <div class="container">
-       <div style="text-align: center;">
-  <a href="quickmed.html">
-     <div class="project-image">
-    <img src="pimage.png" alt="Project Image">
-  </a></div>
-</div>
-    </div>
-    <div class="project-details">
-      <h3>quickMED</h3>
-      <p>User Research and Mobile App design</p>
-  <button class="button">Figma</button>
-  <button class="button">Procreate</button>
-  <button class="button">Canva</button>
-    </div>
-  </div>
-</section>
-  
-<section id="project">
-  <div class="container">
-       <div style="text-align: center;">
-  <a href="https://github.com/srr408/projectTeamARMS">
-     <div class="project-image">
-    <img src="pimage2.png" alt="Project Image">
-  </a></div>
-</div>
-    </div>
-    <div class="project-details">
-      <h3>Qalb+</h3>
-      <p>Web Application</p>
-  <button class="button">Python</button>
-  <button class="button">Django</button>
-  <button class="button">SQLite</button>
-    </div>
-  </div>
-</section>
 
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Making technology<br>more human</h1>
+        
+        <h2>Maimuna Zaheer<br>UX Designer + Developer</h2>
+    </section>
 
-<section id="project">
-<div class="main-content">
-  <div class="container">
-      <div style="text-align: center;">
-  <a href="miscellaneous.html">
-     <div class="project-image">
-    <img src="pimage3.png" alt="Project Image"> </div>
-  </a>
-</div>
-    </div>
-    <div class="project-details">
-      <h3>Miscellaneous</h3>
-      <p>Generative Art, Web Dev and more</p>
-      <button class="button">p5js</button>
-      <button class="button">Adobe CC</button>
-      <button class="button">HTML+CSS</button>
-      
-    </div>
-  </div>
-</div>
-</section>
+    <!-- <section class="banner">
+        <div class="banner-image">
+            <img src="ui1.png" alt="Banner">
+        </div>
+    </section> -->
+   
 
- 
+    <section class="projects"></section>
+        <div class="p-container reveal">
+            <h2 class="section-heading ">Featured Projects</h2>
+        </div>
 
-</body> 
+        <div class="project-grid reveal">
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="quickmed.png" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>Project Title</h3>
+                    <p>Brief description</p>
+                </div>
+            </div>
 
-<footer>
-  <div class="container">
-    <div class="footer-text">
-      <p>Let's chat!    </p>
-      
-    </div>
-    <div class="footer-icons">
-      <a href="mailto:mz2934@nyu.edu"><i class="fas fa-envelope"></i></a>
-  <a href="http://linkedin.com/in/maimuna-zaheer/"><i class="fab fa-linkedin"></i></a>
-  <a href="http://github.com/itserror404"><i class="fab fa-github"></i></a>
-    </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="quickmed.png" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>Project Title</h3>
+                    <p>Brief description</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="quickmed.png" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>Project Title</h3>
+                    <p>Brief description</p>
+                </div>
+            </div>
+
+           
+
+        </div>
+    </section>
     
-  </div>
+    
+<!-- 
+    Featured Projects Section 
+    <section class="featured-projects">
+        <div class="section-container reveal">
+            <h2 class="section-heading ">Featured Projects</h2>
+
+
+            <div class="project-container reveal">
+                <div class="project-box">
+                    <div class="project-content">
+                        <span class="case-study">UX case study</span>
+                        <h3>QuickMed Mobile App</h3>
+                        <p>Healthcare app</p>
+                        <a href="#" class="view-project">View Project</a>
+                    </div>
+                    <div class="project-image">
+                        <img src="quickmed.png" alt="QuickMed Project">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-container reveal">
+                <div class="project-box1">
+                    <div class="project-content">
+                        <span class="case-study">UX case study</span>
+                        <h3>QuickMed Mobile App</h3>
+                        <p>Healthcare app</p>
+                        <a href="#" class="view-project">View Project</a>
+                    </div>
+                    <div class="project-image">
+                        <img src="qalb.png" alt="QuickMed Project">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-container reveal">
+                <div class="project-box2">
+                    <div class="project-content">
+                        <span class="case-study">UX case study</span>
+                        <h3>QuickMed Mobile App</h3>
+                        <p>Healthcare app</p>
+                        <a href="#" class="view-project">View Project</a>
+                    </div>
+                    <div class="project-image">
+                        <img src="quickmed.png" alt="QuickMed Project">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+    <!-- UI Gallery Section -->
+    <section class="ui-gallery">
+        <div class="section-container reveal">
+            <h2 class="section-heading ">UI Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Gallery images will be added dynamically via JS -->
+        </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+        </div>
+    </div>
+
+    <!-- Miscellaneous Section -->
+    <section class="miscellaneous">
+        <div class="section-container reveal">
+            <h2 class="section-heading">Side Projects</h2>
+            <div class="misc-grid">
+            <a href="#"><img src="pimage3.png" alt="Misc 1"></a>
+            <a href="#"><img src="pimage4.png" alt="Misc 2"></a>
+            
+        </div></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="section-container reveal">
+            <h2 class="section-heading ">About me</h2>
+        <div class="about-content">
+            <p class="intro">Hi, I'm Maimuna Zaheer</p>
+            
+            <p class="description">I'm a UX Designer and Developer who believes in creating digital experiences that make a difference. With a unique blend of Computer Science and Design from NYU, I bridge the gap between technical functionality and human-centered design.</p>
+            
+            <div class="skills-section">
+                <h3>Skills:</h3>
+                <ul>
+                    <li>
+                        
+                        <div class="tools">
+                            <span class="skill-category">UX/UI:</span>
+                            <div class="tool">
+                                <img src="figma-logo.png" alt="Figma">
+                                <span>Figma,</span>
+                            </div>
+                            <div class="tool">
+                                <!-- <img src="xd-logo.svg" alt="Adobe XD"> -->
+                                <span>Adobe Creative Suite,</span>
+                            </div>
+                            <div class="tool">
+                                <!-- <img src="prototyping-icon.svg" alt="Prototyping"> -->
+                                <span>Procreate</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li><span class="skill-category">Development:</span> HTML, CSS, JavaScript, React, Vue</li>
+                    <li><span class="skill-category">Research:</span> User Interviews, Usability Testing</li>
+                </ul>
+            </div>
+
+         
+          
+            <div class="education-section">
+                <h3>Education:</h3>
+                <div class="education-item">
+                    <img src="nyu-logo.png" alt="NYU" class="school-logo">
+                    <div>
+                        <p>BS in Computer Science, Minor in Interactive Media
+                        <br>New York University, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certification-section">
+                <h3>Certification:</h3>
+                <div class="cert-item">
+                    <img src="google-logo.png" alt="Google" class="cert-logo">
+                    <p>Google UX Certificate (ongoing)</p>
+                </div>
+            </div>
+            
+
+
+
+            <div class="portfolio-link-section">
+                <a href="[your-link]" target="_blank" class="tech-portfolio-link">
+                    View Technical Resume →
+                </a>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+    <!-- <div class="mode-switch">
+        <a href="ux-portfolio.html" class="mode active">UX</a>
+       <span class="divider">/</span>
+        <a href="dev-portfolio.html" class="mode">Dev</a> 
+    </div> -->
+   
+
+    <button class="back-to-top" aria-label="Back to top">
+        <span class="arrow">↑</span>
+    </button>
+    
+
+    <script src="scripts.js"></script>
+</body>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-main">
+            
+            <div class="footer-left">
+                <div class="contact-text">
+                    <p class="create-text">Let's create something</p>
+                    <p class="meaningful-text">meaningful together</p>
+                </div>
+                <!-- <h3>let's create something<br> meaningful together</h3> -->
+                <div class="cta-container">
+                    <a href="mailto:mz2934@nyu.edu" class="cta-button">
+                        Start a Conversation
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+                
+               <!-- <a href="mailto:mz2934@nyu.edu" class="email-link">mz2934@nyu.edu</a> -->
+            </div>
+            <div class="footer-right">
+                <div class="social-links">
+                    <a href="#" target="_blank">Email</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">Behance</a>
+                    <a href="#" target="_blank">Github</a>
+                    <!-- <a href="#" target="_blank">Instagram</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-links">
+            <p>Looking for my development work?</p>
+            <a href="dev.html">View Developer Resume →</a>
+        </div>
+        
+        <div class="footer-bottom">
+    
+            <p>© 2024 Maimuna Zaheer. Built with creativity.</p>
+        </div>
+    </div>
 </footer>
 
 </html>
-
