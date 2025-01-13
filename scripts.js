@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Add to your script.js
+
 document.addEventListener('DOMContentLoaded', function() {
     const backToTop = document.querySelector('.back-to-top');
     
@@ -119,6 +119,34 @@ document.addEventListener('DOMContentLoaded', function() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
+        });
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all navigation links
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                
+                // If using mobile menu, close it after clicking
+                const mobileMenu = document.querySelector('.mobile-menu');
+                if (mobileMenu) {
+                    mobileMenu.classList.remove('active');
+                }
+            }
         });
     });
 });
