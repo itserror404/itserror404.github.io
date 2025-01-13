@@ -27,20 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const lightboxImg = document.getElementById('lightbox-img');
     let currentImageIndex = 0;
     const images = [
+      'yamahaf2.png',
         'zengarden.png',
-       'quickmed.png',
-        'yamahafull.png',
-         'ecothreads.png',
-         'ecothreads2.png',
-        'port1.png',
-        'zen1.png',
-        'zen2.png',
-        'zen3.png',
-        'yamaha1.png',
-        'yamaha2.png',
-         'cypher1.png',
-        'cypher2.png',
-        'cypher3.png'
+        'yamahaf.png',
+        'cypherof.png',
+        'port1.png'
+       
+        
     ];
 
     // Dynamically add gallery images
