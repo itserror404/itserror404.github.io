@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'port1.png',
         'port2.png',
         '14.png',
-        'hoodie.png'
+        'hoodie.png',
         
         '15.png'
        
