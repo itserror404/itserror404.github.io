@@ -29,9 +29,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const images = [
       'yamahaf2.png',
         'zengarden.png',
+        
+        '13.png',
         'yamahaf.png',
         'cypherof.png',
-        'port1.png'
+        
+        'port1.png',
+        'port2.png',
+        '14.png',
+        'hoodie.png'
+        
+        '15.png'
        
         
     ];
