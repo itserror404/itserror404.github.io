@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const lightboxImg = document.getElementById('lightbox-img');
     let currentImageIndex = 0;
     const images = [
+
+        'eco.png',
       'yamahaf2.png',
         'zengarden.png',
         
