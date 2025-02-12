@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentImageIndex = 0;
     const images = [
 
+        'fireai.png',
+
         'eco.png',
       'yamahaf2.png',
         'zengarden.png',
