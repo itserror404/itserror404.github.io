@@ -157,3 +157,56 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+// JavaScript for Filter Toggle
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectItems = document.querySelectorAll('.project-item');
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const filter = button.id.replace('-filter', ''); // "all", "ui", or "web"
+    
+    // Remove active class from all buttons
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    // Add active class to the clicked button
+    button.classList.add('active');
+
+    // Show/hide projects
+    projectItems.forEach(item => {
+      if (filter === 'all') {
+        item.classList.remove('hidden');
+      } else {
+        item.classList.toggle('hidden', !item.classList.contains(filter));
+      }
+    });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const closeBtn = document.getElementsByClassName('close')[0];
+  
+    // Get all elements with class 'enlarge'
+    const enlargeElements = document.querySelectorAll('.enlarge');
+  
+    enlargeElements.forEach(function(elem) {
+      elem.onclick = function(e) {
+        e.preventDefault(); // Prevent default link behavior
+        modal.style.display = 'block';
+        modalImg.src = this.getAttribute('data-img');
+      }
+    });
+  
+    // Close the modal when clicking on the (x)
+    closeBtn.onclick = function() {
+      modal.style.display = 'none';
+    }
+  
+    // Close the modal when clicking outside the image
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    }
+  });
