@@ -39,15 +39,31 @@
     z-index: 1000;
   }
   
-  .site-header .logo {
+ .site-header .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
-
     display: flex;
-    align-items: center; 
-    gap: 8px; 
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
 }
+
+.logo a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the text color unchanged */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo a:active,
+.logo a:focus,
+.logo a:hover {
+    text-decoration: none;
+    color: #007BFF;
+}
+
 
   
   .logo img {
