@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>From Data Scraping to Data Rights: Why AI Needs Governance Now</title>
+
+  <!-- Fonts & CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="blog-styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="blog.html">Maimuna Zaheer</a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="blog.html">Back to Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+    <article class="blog-post-content">
+      <h1>From Data Scraping to Data Rights: Why AI Needs Governance Now </h1>
+      <p class="post-date">Posted on </p>
+
+    
+
+ 
+        <h2>Introduction: The High Stakes of Unlicensed AI Training</h2>
+      
+        <p>Generative AI’s biggest innovation wasn’t its ability to mimic language or generate images. It was pretending that everything on the internet was up for grabs.</p>
+      
+        <p>In one of the earliest and most high-profile lawsuits over AI training data, Getty Images sued Stability AI for allegedly using more than 12 million photos without a license to train its AI image-generation system, Stable Diffusion. Getty, which licenses its assets to leading tech companies under strict terms, claims that Stability AI not only used the images without permission, but even removed copyright info and generated fake images with Getty’s own watermark, creating confusion and potential reputational risk.</p>
+      
+        <p>Stability AI is also being sued by artists who argue that their copyrighted artworks were used without permission or compensation. Getty goes further, claiming that Stability AI didn’t just take images but also took the metadata that accompanies their assets and then used it to compete with Getty itself. Getty has asked for Stability to stop using its assets and requested compensation for the damages.</p>
+      
+        <p>Traditional LLMs haven’t been immune either. Comedian Sarah Silverman and several authors sued Meta and OpenAI for copyright infringement by using their work without permission. Leaked information showed that the authors’ work was used in Meta’s datasets. ChatGPT was generating summaries that resembled their protected works, indicating that the model retained the data while training.</p>
+      
+        <p>Another significant legal action comes from <em>The New York Times</em> which has sued both OpenAI and Microsoft for copyright infringement, alleging their models were trained on millions of its articles without authorisation. Times argues that their business model, built on subscriptions, traffic, and ad revenue, is now undercut by users turning to ChatGPT instead. "This allows for free riding," says Lieberman, attorney for <em>The New York Daily News</em>.</p>
+      
+        <p>The lawsuit seeks billions in damages and, in a potentially devastating demand, calls for the destruction of ChatGPT’s dataset. If granted, OpenAI would be forced to rebuild its model with only authorised and licensed data.</p>
+      
+        <p><em>“Copyright law is a sword that's going to hang over the heads of AI companies for several years unless they figure out how to negotiate a solution.”</em> — Daniel Gervais, co-director of the intellectual property program at Vanderbilt University</p>
+
+      
+        <p>These cases signal a broader legal and governance shift: AI developers can no longer assume that mass scraping is a fair game.</p>
+
+      
+ 
+
+
+        <h2>The Status Quo: How AI Models Actually Train</h2>
+      
+        <p>Lawsuits are just the legal aftermath. The real issue starts with how generative AI models get their data.</p>
+      
+        <p>Training starts with a crawl, literally.</p>
+      
+        <p>Spiders (web crawlers) are all over the internet, crawling and copying billions of web pages for faster access. Articles, images, videos — everything is downloaded and fed into huge training datasets. Often there is no check on who made it or if they consented to its use.</p>
+      
+        <p>One of the widely used crawlers is CCBot. It is run by the non-profit Common Crawl, which compiles massive web archives. These datasets are later used to create other training sets like LAION, which is widely used in image model development. OpenAI has said that most of its data comes from Common Crawl.</p>
+      
+        <p>But being a non-profit doesn’t mean that this data is copyright free or that it can be used to build products and make money. This data is huge, messy and not really checked for ownership rights.</p>
+      
+        <p>In 2023, OpenAI launched its own crawler, GPTBot, to scrape online content for AI training. It claims to avoid paywalled or private sites and lets creators opt-out by editing a file called <code>robots.txt</code>. But most people don’t even know what that is, let alone how to change it.</p>
+      
+        <p>Some datasets go even further. An ongoing lawsuit against OpenAI’s ChatGPT and Meta’s LLaMA alleges that these models were also trained on illegally obtained datasets from shadow libraries like Z-library and Bibliotik. One Meta research paper cited ThePile, a dataset created by EleutherAI, which openly admits it included data from Bibliotik.</p>
+      
+        <p>A search tool developed by <em>The Atlantic</em> showed that over 7.5 million books were hosted on LibGen, an illegal pirate site later used by Meta and other AI companies.</p>
+      
+        <p>Companies like Anthropic have tried to justify this. They argued that training their models requires datasets at a huge scale and licensing is impossible. They also say that their data comes from publicly available and non-profit datasets. But public ≠ legal.</p>
+      
+        <p>The legality of this entire process now depends on how courts interpret copyright in the age of AI.</p>
+    
+    
+    
+        <h2>The Legal Landscape: What Copyright Law Does (and Doesn’t) Cover</h2>
+        
+        <p>In the U.S., copyright law is shaped by the Fair Use Doctrine. This allows limited, unlicensed use of copyrighted materials without permission. It applies to cases like criticism, comment, news reporting, teaching, scholarship, and research.</p>
+        
+        <p>Whether something qualifies as fair use depends on four key factors:<br>
+            – Purpose of the use<br>
+            – Nature of the original work<br>
+            – Amount of the content used<br>
+            – Impact on the original work’s market</p>
+            
+        
+        <p>So, there is no fixed rule. It’s a case-by-case decision, and courts have a lot of freedom to determine whether a use is “derivative”/copy or “transformative.”</p>
+        
+        <p>This lack of strict, clear laws is exploited by AI companies to justify training on copyrighted material — even when the original creators never gave permission.</p>
+        
+        <p>Some examples show how courts are handling this:</p>
+        
+        <p>In <em>Warhol Foundation v. Lynn Goldsmith</em> (2023), the court said that the licensing of Warhol’s portrait was not transformative. It was based on Goldsmith’s original photo and still commercial. So, it was not fair use.</p>
+        
+        <p>But in <em>Authors Guild v. Google</em> (2015), the court ruled the opposite. Google scanned and included snippets of books in search results. It made information about the books more accessible. Interested users would have to purchase the books to read them. This was considered transformative.</p>
+        
+        <p>What about generative AI? Is training a model on copyrighted content okay?</p>
+        
+        <p>In <em>Thomson Reuters v. Ross Intelligence Inc.</em>, the court said no. Ross built a legal AI tool using Westlaw’s editorial content, without a license. Even though the AI didn’t reproduce the content directly, the court said the use was commercial, non-transformative, and hurt Westlaw’s market.</p>
+        
+        <p>This case is an early sign that courts may not allow companies to freely use copyrighted material for AI training — especially when it competes with the original creator’s business.</p>
+        
+        <p>In the EU, copyright laws are similar but a bit more structured. The Copyright Directive includes two exceptions for text and data mining (TDM). The first applies to research and cultural organizations. The second allows for general use, but only if the owner hasn’t opted out.</p>
+        
+        <p>That opt-out clause is important. It gives content owners some power to say no. And it slows down how freely commercial developers can train on web content.</p>
+        
+        <p>While the EU’s rules are more transparent than U.S. law, both systems show how unprepared current copyright frameworks are for the scale and speed of generative AI development.</p>
+
+        
+    
+
+ 
+        <h2>Governance Gaps: Why This Isn’t Just a Legal Problem</h2>
+        
+        <p>Even when laws offer some protection, like EU opt-outs or the U.S. fair use, the systems to actually enforce or respect those protections are often missing.</p>
+        
+        <p>The EU AI Act calls for transparency. Companies are asked to report how they collect data and where it comes from. This should prevent unauthorized data like personal and copyrighted data from being used for training purposes.</p>
+        
+        <p>But it’s all self-reported. There is no system in place to make sure this is followed.</p>
+        
+        <p>Similarly, while Directive (EU) 2019/790 allows rights holders to opt out of text and data mining, it doesn’t define how this opt-out should be registered, detected, or enforced.</p>
+        
+        <p>In the UK, the IPO had to withdraw a proposal that allowed text and data mining after being criticised for being misguided and harmful to creative industries. Even lawmakers aren’t sure how to govern this yet.</p>
+        
+        <p>A recent paper, <em>Open Problems in Technical AI Governance</em>, points to a deeper issue. We are still in the process of developing the infrastructure to verify what data was used, where it came from, or whether it was licensed.</p>
+        
+        <p>Even Creative Commons, a supporter of open access, acknowledged these governance gaps in its response to the U.S. Copyright Office. While it argued that AI training can fall under fair use, it also stressed that copyright law alone is not enough to handle the scale of generative AI.</p>
+        
+        <p>That’s the bigger issue. What’s missing isn’t just legal clarity. It is the technical and policy framework that gives creators visibility, choice, and enforcement power.</p>
+        
+        <p>Right now, there is no standard way to express opt-outs, no requirement to document datasets and no tools to check whether a creator’s content was used in training.</p>
+
+    
+        <h2>Policy Tools: How We Could Govern This</h2>
+        
+        <p>Now, let’s look at what tools and policies could be implemented to govern AI training more effectively.</p>
+        
+        <p>One promising area is data provenance.</p>
+        
+        <p>The W3C’s PROV specs weren’t built for AI, but they can help. They record where data comes from, who owns it, and how it’s used. That kind of metadata could help both regulators and creators track what’s going into AI systems.</p>
+        
+        <p>Similarly, there is the IPTC/PLUS "Data Mining" property. It gives creators a way to label their content. They can add whether data mining should be done or not; Web crawlers and AI platforms can use these signals to avoid data mining.</p>
+        
+        <p>Creators aren’t waiting around, either.</p>
+        
+        <p>The Glaze Project is building defence tools. It includes tools like Glaze, Nightshade, and WebGlaze. These help artists protect their works from being used in unauthorized AI training.</p>
+        
+        <p>Glaze applies subtle "style cloaks" to artworks. This misleads AI models from accurately copying a specific artist's style.</p>
+        
+        <p>Nightshade goes further. It's a poisoning attack that can inject misleading training samples to hijack model behaviour from within.</p>
+        
+        <p>Researchers have also been working on ways to verify what a model was trained on. For instance, Choi et al. (2023) proposed a protocol for "proof-of-training data," where a model developer proves that a model was trained on a specific dataset. However, the approach has limitations. It requires full access to private data like weights and code, and doesn't catch minor dataset tampering.</p>
+        
+        <p>Another approach is the membership inference attacks (MIAs). These aim to detect whether a particular data point was included in a model’s training data, even without access to the model.</p>
+        
+        <p>If made more robust, it could help auditors confirm whether copyrighted or restricted content was used.</p>
+        
+        <p>Ultimately, verifying fair data use will need both legal and technical systems.</p>
+        
+        <p>We need better mechanisms to:<br>
+        – Audit training data retrospectively<br>
+        – Detect protected content<br>
+        – Document dataset composition<br>
+        – Support opt-outs and licenses that stay across the AI pipeline</p>
+        
+        <p>The tools are just starting to emerge. We need policy coordination and institutional support to scale them responsibly.</p>
+        </section>
+        
+        <section>
+        <h2>Conclusion: Toward Transparent and Fair AI Training</h2>
+        
+        <p>The debate around AI training data isn’t just about copyright law. It’s about consent. It’s about transparency. And it's about the systems we build (or not) to govern tech.</p>
+        
+        <p>The lawsuits make one thing clear: scraping the internet for data without consent or oversight is no longer sustainable or ethical.</p>
+        
+        <p>We need real governance. Not just legal fixes, but technical and institutional ones.</p>
+        
+        <p>That means better documentation. Clear opt-outs. Audits that actually happen. And rules that don’t just protect AI companies, but also protect the artists, writers, and users whose work controls these models.</p>
+        
+        <p>This is still early days. But the tools exist.<br>
+        Now it’s just a question of whether we choose to use them.</p>
+
+
+    <section>
+        <h2>Sources</h2>
+        
+        <p>– Getty Images v. Stability AI lawsuit<br>
+        – The New York Times v. OpenAI and Microsoft<br>
+        – Sarah Silverman et al. v. OpenAI and Meta<br>
+        – Warhol Foundation v. Lynn Goldsmith (2023)<br>
+        – Authors Guild v. Google (2015)<br>
+        – Thomson Reuters v. Ross Intelligence Inc.<br>
+        – EU AI Act and Directive (EU) 2019/790<br>
+        – Open Problems in Technical AI Governance (2023)<br>
+        – Creative Commons submission to U.S. Copyright Office<br>
+        – Glaze and Nightshade Projects<br>
+        – Choi et al. (2023), "Proof-of-Training Data"<br>
+        – Membership Inference Attacks (various papers)</p>
+        </section>
+          
+    <section>
+    <p><strong>Note:</strong> Edited with the help of AI tools. All research and writing decisions are my own.</p>
+    </section>
+    
+
+        
+          
+      
+    </article>
+
+    <div class="back-btn-container">
+      <a href="blog.html" class="cta-button">← Back to Blog</a>
+    </div>
+    
+  </div>
+
+  <!-- Minimal Footer with short bio/contact again -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- A concise "bio" area with your info -->
+      <p><strong>Maimuna Zaheer</strong><br>
+         B.S. Computer Science @ NYU '24<br>
+         <a href="mailto:mz2934@nyu.edu">mz2934@nyu.edu</a> | 
+         <a href="https://linkedin.com/in/maimuna-zaheer" target="_blank">LinkedIn</a> | 
+         <a href="https://github.com/itserror404" target="_blank">GitHub</a>
+      </p>
+
+    </div>
+  </footer>
+  
+
+  <script src="blog-scripts.js"></script>
+</body>
+</html>
