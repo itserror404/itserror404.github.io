@@ -5,11 +5,9 @@
   box-sizing: border-box;
 }
 
-
-
 /* Body & Fonts */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', 'Roboto', 'Segoe UI', sans-serif;
   background-color: #fff;
   color: #333;
   line-height: 1.6;
@@ -18,7 +16,12 @@ body {
   flex-direction: column; 
   min-height: 100vh; 
   
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
 }
 
 /* Container for wide margins */
@@ -45,18 +48,22 @@ body {
 }
 
 .site-header .logo {
-  font-size: 1.3rem;
-  font-weight: 400; /* Lighter than default */
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: 'Inter', 'Roboto', sans-serif;
 }
 
 .site-header .logo a {
   text-decoration: none;
   color: #333;
-  transition: color 0.2s;
+  transition: all 0.3s;
+  border-bottom: 1px solid transparent;
+  font-weight: 400;
 }
 
 .site-header .logo a:hover {
-  color: #007BFF;
+  color: #333;
+  border-bottom: 1px solid #333;
 }
 
 /* Navbar */
@@ -68,13 +75,15 @@ body {
 
 .navbar ul li a {
   text-decoration: none;
-  color: #444;
+  color: #333;
   font-weight: 400;
-  transition: color 0.3s;
+  transition: all 0.3s;
+  border-bottom: 1px solid transparent;
 }
 
 .navbar ul li a:hover {
-  color: #007BFF;
+  color: #333;
+  border-bottom: 1px solid #333;
 }
 
 /* Blog List (index page) */
@@ -83,15 +92,15 @@ body {
 }
 
 .blog-list h1 {
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 1.7rem;
   margin-bottom: 8px;
   margin-top: 10px;
+  font-weight: 400;
 }
 
 .blog-list p {
   margin-bottom: 30px;
-  font-weight: 300;
+  font-size: 1.1rem;
   color: #555;
 }
 
@@ -101,19 +110,22 @@ body {
 }
 
 .blog-links article h2 {
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1.1rem;
   margin-bottom: 5px;
+  font-weight: 400;
 }
 
 .blog-links article h2 a {
-  color: #333;
-  text-decoration: underline;
-  transition: color 0.2s;
+  color: #8a68c1;
+  text-decoration: none;
+  transition: all 0.3s;
+  border-bottom: 1px solid transparent;
+  font-weight: 400;
 }
 
 .blog-links article h2 a:hover {
-  color: #007BFF;
+  color: #8a68c1;
+  border-bottom: 1px solid #8a68c1;
 }
 
 /* Single Post Content */
@@ -124,8 +136,8 @@ body {
 
 .blog-post-content h1 {
   font-size: 1.8rem;
-  font-weight: 400;
   margin-bottom: 0.5rem;
+  font-weight: 400;
 }
 
 /* Post date style */
@@ -133,28 +145,29 @@ body {
   color: #777;
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
-  font-weight: 300;
+  font-style: italic;
 }
 
 /* Subheadings (h2, h3) in blog posts */
 .blog-post-content h2 {
   font-size: 1.4rem;
-  font-weight: 400;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  font-weight: 400;
 }
 
 .blog-post-content h3 {
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1.1rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+  font-weight: 400;
 }
 
 /* Paragraph style */
 .blog-post-content p {
-  margin-bottom: 1rem;
-  font-weight: 300;
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
 /* Back button */
@@ -176,16 +189,16 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #007BFF;
+  background-color: #8a68c1;
 }
 
-/* Footer */.site-footer {
+/* Footer */
+.site-footer {
   padding: 20px 0;
   border-top: 1px solid #eee;
   margin-top: 20px;
-  background-color: #f8f9fa; 
+  background-color: #fff; 
 }
-
 
 .footer-container {
   max-width: 900px;
@@ -197,18 +210,25 @@ body {
 .footer-container p {
   margin-bottom: 10px;
   font-size: 0.95rem;
-  color: #555;
+  color: #333;
   font-weight: 300;
 }
 
+.footer-container strong {
+  font-weight: 600;
+}
+
 .footer-container a {
-  color: #333;
+  color: #8a68c1;
   text-decoration: none;
-  transition: color 0.2s;
+  transition: all 0.3s;
+  border-bottom: 1px solid transparent;
+  font-weight: 400;
 }
 
 .footer-container a:hover {
-  color: #007BFF;
+  color: #8a68c1;
+  border-bottom: 1px solid #8a68c1;
 }
 
 /* Media Queries (adjust as needed) */
@@ -220,4 +240,26 @@ body {
   .navbar ul {
     gap: 10px;
   }
+}
+
+/* Blockquote styling for important quotes */
+blockquote {
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  background-color: #f8f5ff;
+  border-left: 4px solid #8a68c1;
+  font-style: italic;
+  position: relative;
+}
+
+blockquote p {
+  margin-bottom: 0 !important;
+}
+
+blockquote cite {
+  display: block;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  font-style: normal;
+  color: #666;
 }
