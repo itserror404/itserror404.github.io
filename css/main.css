@@ -739,6 +739,44 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+/* Education Section */
+.education-experience-list {
+  margin-bottom: 0;
+}
+
+.education-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.education-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.education-degree {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.education-dates {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #999999;
+}
+
+.education-org {
+  font-size: 0.9rem;
+  color: #666666;
+  margin: 0;
+}
+
 .project-list {
   list-style: none;
   padding: 0;
